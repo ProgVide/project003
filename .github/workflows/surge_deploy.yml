@@ -36,14 +36,8 @@ jobs:
       
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: build # will run `yarn build` command
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: test # 
+          cmd: build
 
-      - name: Build react app
-        run : yarn build
-        
       - name: Install surge
         run : npm install -g surge
         
